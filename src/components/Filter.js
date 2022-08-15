@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import DataContext from '../context/DataContext';
+import '../styles/Filter.css';
 
 const Filter = () => {
   const {
@@ -53,7 +54,7 @@ const Filter = () => {
   };
 
   return (
-    <div>
+    <div id="div-filter">
       <label htmlFor="column-filte">
         <select
           data-testid="column-filter"

@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import DataContext from '../context/DataContext';
 import Filter from './Filter';
 import NameFilter from './NameFilter';
+import starwars from '../images/imgbin_star-wars-logo-png.png';
+import '../styles/Table.css';
 
 const Table = () => {
   const { data, filter: { filters } } = useContext(DataContext);
@@ -9,6 +11,7 @@ const Table = () => {
 
   return (
     <main>
+      <img src={ starwars } alt="starwars" />
       <Filter />
       <NameFilter />
       <table>

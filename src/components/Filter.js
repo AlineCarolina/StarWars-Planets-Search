@@ -35,11 +35,13 @@ const Filter = () => {
       dataNumericalFilter = data
         .filter((planet) => Number(planet[column]) === Number((value)));
     }
+    console.log(dataNumericalFilter);
     setData(dataNumericalFilter);
     await optionsFIlter();
   };
 
-  const handleClick = async () => {
+  const handleClick = async (e) => {
+    e.preventDefault();
     setFilter({
       ...filter,
       filterByNumericValues: [
@@ -54,14 +56,14 @@ const Filter = () => {
   };
 
   return (
-    <div id="div-filter">
+    <div>
       <label htmlFor="column-filte">
         <select
           data-testid="column-filter"
           name="column-filter"
           id="column-filte"
-          value={ column }
           onChange={ (element) => setColumn(element.target.value) }
+          value={ column }
         >
           { options.map((option) => (
             <option
@@ -82,9 +84,9 @@ const Filter = () => {
           value={ comparison }
           onChange={ (element) => setComparison(element.target.value) }
         >
-          <option value="maior que">maior que</option>
-          <option value="menor que">menor que</option>
-          <option value="igual a">igual a</option>
+          <option value="maior que">bigger then</option>
+          <option value="menor que">less than</option>
+          <option value="igual a">equal to</option>
         </select>
       </label>
       <label htmlFor="value-filter">
@@ -95,6 +97,7 @@ const Filter = () => {
           name="value-filter"
           id="value-filter"
           onChange={ (element) => setValue(element.target.value) }
+          placeholder="1000"
         />
       </label>
       <button
@@ -104,7 +107,7 @@ const Filter = () => {
         name="button-filter"
         onClick={ handleClick }
       >
-        acionar o filtro
+        filter
       </button>
     </div>
   );

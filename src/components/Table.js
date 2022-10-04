@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import DataContext from '../context/DataContext';
 import Filter from './Filter';
 import NameFilter from './NameFilter';
+import { tableHeaders } from '../services/data';
 import starwars from '../images/imgbin_star-wars-logo-png.png';
+
 import '../styles/Table.css';
 
 const Table = () => {
@@ -17,19 +19,7 @@ const Table = () => {
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Rotation Period</th>
-            <th>Orbital Period</th>
-            <th>Diameter</th>
-            <th>Climate</th>
-            <th>Gravity</th>
-            <th>Terrain</th>
-            <th>Surface Water</th>
-            <th>Population</th>
-            <th>Films</th>
-            <th>Created</th>
-            <th>Edited</th>
-            <th>URL</th>
+            {tableHeaders.map((header) => <th key={ header }>{header}</th>)}
           </tr>
         </thead>
         <tbody>

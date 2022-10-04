@@ -16,12 +16,12 @@ table {
   background-color: black;
   border: #FFCA00 5px solid;
   color: white;
-  width: 85%;
+  width: 95%;
   margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   text-align: center;
   font-size: smaller;
@@ -32,6 +32,7 @@ tr {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  margin: 0;
 }
 
 th {
@@ -43,7 +44,7 @@ th {
   flex-direction: column;
   justify-content: center;
   padding: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   word-break: break-all;
 }
 
@@ -53,6 +54,8 @@ td {
   flex-direction: column;
   justify-content: center;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 10px;
   word-break: break-all;
+  margin: 0;
+  border: #5e5e5e 0.01px solid;
 }

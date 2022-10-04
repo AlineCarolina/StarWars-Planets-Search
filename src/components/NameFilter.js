@@ -24,6 +24,7 @@ const NameFilter = () => {
           name="filter"
           data-testid="name-filter"
           onChange={ handleChange }
+          placeholder="search by planet name"
         />
       </label>
     </div>

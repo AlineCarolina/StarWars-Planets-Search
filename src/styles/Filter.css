@@ -1,13 +1,37 @@
 #div-filter {
-  border: 1px solid #FFCA00;
+  display: flex;
+  width: 50%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 select {
   background-color: black;
   color: white;
+  border-radius: 10px;
+  height: 40px;
+  margin: 3px;
 }
 
 input {
   background-color: black;
   color: white;
+  border-radius: 10px;
+  height: 40px;
+  margin: 3px;
+}
+
+#button-filter {
+  background-color: black;
+  color: #FFCA00;
+  border-radius: 10px;
+  border: #FFCA00 1px solid;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 40px;
+}
+
+#button-filter:hover {
+  background-color: #FFCA00;
+  color: black;
 }

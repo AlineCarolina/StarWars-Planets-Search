@@ -1,8 +1,15 @@
 # Project StarWars Planets Search! 🔭​
 
+![](./src/images/gifprojects.gif)
+
+This React application receives from an API a list with data of planets from the Star Wars universe, there are also filters where it is possible:
+  * search for a planet by name;
+  * filter planets by specific features
+
 ---
 
 ## About the project
+This project was developed with a focus on learning how to use Context API and Hooks in a React application as a state manipulation tool. 
 
 ---
 

@@ -1,10 +1,10 @@
 # Project StarWars Planets Search! 🔭​
 
-![](./src/images/gifprojects.gif)
-
 This React application receives from an API a list with data of planets from the Star Wars universe, there are also filters where it is possible:
   * search for a planet by name;
   * filter planets by specific features
+
+![](./src/images/gifprojects.gif)
 
 ---
 
@@ -24,6 +24,8 @@ This project was developed with a focus on learning how to use Context API and H
 ---
 
 ## How to run the project
+Application Deployment is available at [here](https://star-wars-planets-search-alinecarolina.vercel.app/) but if you want, here are the instructions 
+
 ```
 $ git clone git@github.com:AlineCarolina/StarWars-Planets-Search.git
 ```

@@ -22,7 +22,6 @@ const NameFilter = () => {
         <input
           type="text"
           name="filter"
-          data-testid="name-filter"
           onChange={ handleChange }
           placeholder="search by planet name"
         />

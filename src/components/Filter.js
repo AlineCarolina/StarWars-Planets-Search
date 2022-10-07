@@ -59,7 +59,6 @@ const Filter = () => {
     <div>
       <label htmlFor="column-filte">
         <select
-          data-testid="column-filter"
           name="column-filter"
           id="column-filte"
           onChange={ (element) => setColumn(element.target.value) }
@@ -78,7 +77,6 @@ const Filter = () => {
       </label>
       <label htmlFor="comparison-filter">
         <select
-          data-testid="comparison-filter"
           name="comparison-filter"
           id="comparison-filter"
           value={ comparison }
@@ -93,7 +91,6 @@ const Filter = () => {
         <input
           value={ value }
           type="number"
-          data-testid="value-filter"
           name="value-filter"
           id="value-filter"
           onChange={ (element) => setValue(element.target.value) }
@@ -103,7 +100,6 @@ const Filter = () => {
       <button
         id="button-filter"
         type="button"
-        data-testid="button-filter"
         name="button-filter"
         onClick={ handleClick }
       >
